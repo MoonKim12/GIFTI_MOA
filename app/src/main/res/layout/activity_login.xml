@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        />
+
+    <TextView
+        android:layout_width="306dp"
+        android:layout_height="35dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:text="반갑습니다."
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textStyle="bold|italic"
+            android:text="GIFTI MOA"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:textColor="#8b00ff"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="입니다."
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:text="아이디" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="28dp"
+            android:inputType="textEmailAddress"
+            android:hint="  GIFTI MOA 통합 아이디 6~12자"
+            android:textSize="12dp"
+            android:id="@+id/emailEditText"/>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:text="비밀번호" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="28dp"
+            android:inputType="textPassword"
+            android:hint="  영문, 특수문자, 숫자혼합 6~12자"
+            android:textSize="12dp"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textSize="12dp"
+            android:text="자동 로그인"
+            android:buttonTint="#8b00ff"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#8b00ff"
+        android:text="로  그  인"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        >
+        <TextView
+            android:id="@+id/Login_ID_Find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 찾기"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/Login_PW_Find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="8dp"
+            android:text="비밀번호찾기"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+           android:id="@+id/Login_Sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="8dp"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

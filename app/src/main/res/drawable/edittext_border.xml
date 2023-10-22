@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" /> <!-- 배경색은 투명하게 설정 -->
+    <stroke
+        android:width="1dp"
+        android:color="#D3D3D3" /> <!-- 외곽선 색상을 원하는 색으로 설정 -->
+    <corners android:radius="1dp" /> <!-- EditText의 둥근 모서리를 조정할 수 있습니다. -->
+</shape>

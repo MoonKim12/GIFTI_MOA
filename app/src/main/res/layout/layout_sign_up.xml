@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GIFTI MOA"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#8b00ff"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        />
+
+        <!--이메일 -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/ID_textField"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:errorEnabled="true"
+            app:boxStrokeColor="#8b00ff"
+            app:boxStrokeErrorColor="#ff0000"
+            android:hint="이메일">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ID_textField_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textSize="14dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--비밀번호 -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/PW_textField"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#8b00ff"
+            android:hint="비밀번호">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PW_textField_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="14dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--비밀번호 재확인 -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/PW_Re_textField"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#8b00ff"
+            android:hint="비밀번호 확인">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PW_Re_textField_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textSize="14dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--이름 -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#8b00ff"
+            android:hint="이름">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--휴대폰번호 -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/user_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#8b00ff"
+            android:hint="휴대폰번호( ' - ' 없이 입력)">
+
+            <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/user_phone_number_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textSize="14dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--닉네임 -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/user_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="#8b00ff"
+            android:hint="닉네임">
+
+            <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/user_nickname_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="회 원 가 입"
+        android:backgroundTint="#8b00ff"
+
+        />
+
+</LinearLayout>
