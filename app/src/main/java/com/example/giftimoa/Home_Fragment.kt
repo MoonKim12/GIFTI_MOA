@@ -35,7 +35,7 @@ class Home_Fragment : Fragment() {
         // ViewPager 설정
         mPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
-        mPager.setCurrentItem(1000, false) // 시작 지점 (두 번째 인수로 부드러운 스크롤을 사용하려면 true로 설정)
+        mPager.setCurrentItem(1000, true) // 시작 지점 (두 번째 인수로 부드러운 스크롤을 사용하려면 true로 설정)
         mPager.offscreenPageLimit = 4 // 최대 이미지 수
 
         mPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
