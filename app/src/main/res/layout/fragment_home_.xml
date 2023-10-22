@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_Fragment">
+    tools:context=".Home_Fragment"
+    android:orientation="vertical">
 
     <!--중고 장터 배너-->
     <FrameLayout
         android:id="@+id/marketplace_banner"
         android:layout_width="match_parent"
-        android:layout_height="230dp">
+        android:layout_height="220dp">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager"
@@ -30,6 +31,222 @@
     </FrameLayout>
 
     <!--기프티콘 아이콘 목록-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--상단 아이콘-->
+            <TextView
+                android:id="@+id/home_ic_coffee"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="1"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/home_ic_chicken"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="2"
+                android:gravity="center"/>
 
+            <TextView
+                android:id="@+id/home_ic_pizza"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/home_ic_festfood"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="255dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="4"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/home_ic_mart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="5"
+                android:gravity="center"/>
+
+            <!--하단 아이콘-->
+            <TextView
+                android:id="@+id/home_ic_bread"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="85dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/home_ic_icecream"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="85dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="2"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/home_ic_snack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="85dp"
+                android:background="@color/black"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white" />
+            <TextView
+                android:id="@+id/home_ic_movie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="255dp"
+                android:layout_marginTop="85dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="4"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/home_ic_giftcard"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="85dp"
+                android:background="@color/black"
+                android:textColor="@color/white"
+                android:text="5"
+                android:gravity="center"/>
+
+            <!--상단 아이콘 목록 이름-->
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="60dp"
+                android:text="커피"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="60dp"
+                android:text="치킨"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="60dp"
+                android:text="피자"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="255dp"
+                android:layout_marginTop="60dp"
+                android:text="패스트푸드"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="325dp"
+                android:layout_marginTop="60dp"
+                android:text="편의점･마트"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+
+            <!--하단 아이콘 목록 이름-->
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="133dp"
+                android:text="베이커리"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="133dp"
+                android:text="아이스크림"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="133dp"
+                android:text="외식･분식"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="255dp"
+                android:layout_marginTop="133dp"
+                android:text="영화"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="133dp"
+                android:text="상품권"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--중고 아이템 목록-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
