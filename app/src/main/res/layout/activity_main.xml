@@ -12,12 +12,13 @@
         android:layout_height="wrap_content"
         android:background="#fff"
         app:itemIconTint="#000"
-        app:itemTextColor="#CDDC39"
+        app:itemTextColor="@color/black"
         app:itemIconSize="27dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:menu="@menu/bottom_nav_menu"
+        app:labelVisibilityMode="labeled" />
 
     <FrameLayout
         android:id="@+id/frame_layout"

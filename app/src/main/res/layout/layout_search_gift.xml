@@ -21,6 +21,9 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:tabSelectedTextColor="@color/blackshadow"
+        app:tabIndicatorColor="@color/blackshadow"
+        app:tabRippleColor="@color/blackshadow"
         app:tabMode="scrollable"
         app:tabGravity="start"
         >

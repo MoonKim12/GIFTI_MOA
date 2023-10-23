@@ -5,4 +5,5 @@
     <color name="grayEC">#ECECEC</color>
     <color name="grayF1">#F1F1F1</color>
     <color name="maincolor">#FF8B00FF</color>
+    <color name="blackshadow">#303030</color>
 </resources>
