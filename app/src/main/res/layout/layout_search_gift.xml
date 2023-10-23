@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Search_gift_activity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -16,5 +17,77 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabGravity="start"
+        >
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_coffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab1"/>
 
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_chicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab2"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab3"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_fastfood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab4"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_mart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab5"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_bakery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab6"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_icecream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab7"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab8"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab9"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/home_ic_search_giftcard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="tab10"/>
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.viewpager2.widget.ViewPager2>
 </LinearLayout>
