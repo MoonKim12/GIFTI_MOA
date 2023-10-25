@@ -1,4 +1,4 @@
-package com.example.giftimoa
+package com.example.giftimoa.bottom_nav_fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
+import com.example.giftimoa.Collect_gift_activity
+import com.example.giftimoa.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class Collect_fragment : Fragment() {

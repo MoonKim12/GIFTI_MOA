@@ -3,16 +3,16 @@ package com.example.giftimoa.recyclierview_adpater_list
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.giftimoa.Home_Fragment_List_Bakery
-import com.example.giftimoa.Home_Fragment_List_Chicken
-import com.example.giftimoa.Home_Fragment_List_Coffee
-import com.example.giftimoa.Home_Fragment_List_Fastfood
-import com.example.giftimoa.Home_Fragment_List_Giftcard
-import com.example.giftimoa.Home_Fragment_List_Icecream
-import com.example.giftimoa.Home_Fragment_List_Mart
-import com.example.giftimoa.Home_Fragment_List_Movie
-import com.example.giftimoa.Home_Fragment_List_Pizza
-import com.example.giftimoa.Home_Fragment_List_Snack
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Bakery
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Chicken
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Coffee
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Fastfood
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Giftcard
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Icecream
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Mart
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Movie
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Pizza
+import com.example.giftimoa.home_fragment_List.Home_Fragment_List_Snack
 
 
 class HomeFragment_adpater_list(activity: FragmentActivity) : FragmentStateAdapter(activity) {

@@ -1,10 +1,11 @@
-package com.example.giftimoa
+package com.example.giftimoa.Banner_Fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.giftimoa.R
 
 class Banner_Fragment_1 : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {

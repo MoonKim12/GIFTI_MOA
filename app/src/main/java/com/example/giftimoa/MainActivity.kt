@@ -3,6 +3,11 @@ package com.example.giftimoa
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.giftimoa.bottom_nav_fragment.Collect_fragment
+import com.example.giftimoa.bottom_nav_fragment.Chat_Fragment
+import com.example.giftimoa.bottom_nav_fragment.Home_Fragment
+import com.example.giftimoa.bottom_nav_fragment.Menu_Fragment
+import com.example.giftimoa.bottom_nav_fragment.Search_Fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 private val home_Fragment = Home_Fragment()

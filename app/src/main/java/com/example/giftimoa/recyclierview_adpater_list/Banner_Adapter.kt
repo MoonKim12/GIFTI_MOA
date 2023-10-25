@@ -3,10 +3,10 @@ package com.example.giftimoa.recyclierview_adpater_list
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.giftimoa.Banner_Fragment_1
-import com.example.giftimoa.Banner_Fragment_2
-import com.example.giftimoa.Banner_Fragment_3
-import com.example.giftimoa.Banner_Fragment_4
+import com.example.giftimoa.Banner_Fragment.Banner_Fragment_1
+import com.example.giftimoa.Banner_Fragment.Banner_Fragment_2
+import com.example.giftimoa.Banner_Fragment.Banner_Fragment_3
+import com.example.giftimoa.Banner_Fragment.Banner_Fragment_4
 
 class Banner_Adapter(private val fa: FragmentActivity, private val count: Int) : FragmentStateAdapter(fa) {
 

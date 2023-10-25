@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Collect_fragment"
+    tools:context=".bottom_nav_fragment.Collect_fragment"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar

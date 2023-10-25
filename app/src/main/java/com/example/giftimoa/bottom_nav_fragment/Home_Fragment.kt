@@ -1,4 +1,4 @@
-package com.example.giftimoa
+package com.example.giftimoa.bottom_nav_fragment
 
 import android.app.Activity
 import android.content.Intent
@@ -10,6 +10,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
+import com.example.giftimoa.R
+import com.example.giftimoa.Search_gift_activity
 import com.example.giftimoa.recyclierview_adpater_list.Banner_Adapter
 import me.relex.circleindicator.CircleIndicator3
 
