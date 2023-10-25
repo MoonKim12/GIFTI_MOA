@@ -21,7 +21,7 @@
         android:name=".Search_gift_activity"
         android:exported="true"/>
     <activity
-        android:name=".Collect_gift_activity"
+        android:name=".Collect_gift_add_activity"
         android:exported="true"/>
     <activity
         android:name=".SignUp_activity"

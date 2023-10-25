@@ -2,6 +2,7 @@ package com.example.giftimoa
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.giftimoa.bottom_nav_fragment.Collect_fragment
 import com.example.giftimoa.bottom_nav_fragment.Chat_Fragment
@@ -15,11 +16,13 @@ private val search_Fragment = Search_Fragment()
 private val collect_fragment = Collect_fragment()
 private val chat_Fragment = Chat_Fragment()
 private val menu_Fragment = Menu_Fragment()
+private var waitTime = 0L
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.layout_main)
+
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomnavigationView)
 
@@ -45,5 +48,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
+    override fun onBackPressed() {
+        if(System.currentTimeMillis() - waitTime >=1500 ) {
+            waitTime = System.currentTimeMillis()
+            Toast.makeText(this,"뒤로가기 버튼을 한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show()
+        } else {
+            finish() // 액티비티 종료
+        }
+    }
 }

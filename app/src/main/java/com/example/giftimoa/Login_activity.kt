@@ -19,7 +19,7 @@ class Login_activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.layout_login)
 
         // XML에서 정의한 위젯들과 연결
         val emailEditText = findViewById<EditText>(R.id.emailEditText)

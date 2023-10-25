@@ -10,7 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
-import com.example.giftimoa.Collect_gift_activity
+import com.example.giftimoa.Collect_gift_add_activity
 import com.example.giftimoa.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
@@ -24,7 +24,7 @@ class Collect_fragment : Fragment() {
 
         // 플로팅 버튼 클릭 시 다음 화면의 액티비티로 이동
         view.findViewById<FloatingActionButton>(R.id.fab_btn).setOnClickListener {
-            val intent = Intent(requireContext(), Collect_gift_activity::class.java)
+            val intent = Intent(requireContext(), Collect_gift_add_activity::class.java)
             startActivity(intent)
         }
     }
