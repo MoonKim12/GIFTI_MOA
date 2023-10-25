@@ -174,7 +174,9 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:text="회 원 가 입"
-        android:backgroundTint="#8b00ff"
+        android:background="@drawable/button_solid"
+        android:textStyle="bold"
+        android:textSize="15dp"
 
         />
 
