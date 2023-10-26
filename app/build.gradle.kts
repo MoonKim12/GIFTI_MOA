@@ -8,6 +8,10 @@ android {
     namespace = "com.example.giftimoa"
     compileSdk = 33
 
+    buildFeatures {
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.giftimoa"
         minSdk = 21
