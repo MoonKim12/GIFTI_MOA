@@ -8,7 +8,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.giftimoa.databinding.LayoutLoginBinding
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.BufferedReader
@@ -17,7 +16,6 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 class Login_activity : AppCompatActivity() {
-    private lateinit var binding : LayoutLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_login)
