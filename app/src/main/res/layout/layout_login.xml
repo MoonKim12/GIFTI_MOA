@@ -66,7 +66,7 @@
             android:layout_marginLeft="72dp"
             android:layout_marginRight="28dp"
             android:inputType="textEmailAddress"
-            android:hint="  GIFTI MOA 통합 아이디 6~12자"
+            android:hint="  GIFTI MOA 통합 이메일  "
             android:textSize="12dp"
             android:id="@+id/emailEditText"/>
 
@@ -91,7 +91,7 @@
             android:layout_marginLeft="72dp"
             android:layout_marginRight="28dp"
             android:inputType="textPassword"
-            android:hint="  영문, 특수문자, 숫자혼합 6~12자"
+            android:hint="  영문, 특수문자, 숫자혼합 8자 이상"
             android:textSize="12dp"/>
 
     </FrameLayout>
