@@ -18,10 +18,19 @@
     tools:targetApi="31">
 
     <activity
+        android:name=".ID_Find_activity"
+        android:exported="true"/>
+    <activity
+        android:name=".PW_Find_activity"
+        android:exported="true"/>
+    <activity
         android:name=".Search_gift_activity"
         android:exported="true"/>
     <activity
         android:name=".Collect_gift_add_activity"
+        android:exported="true"/>
+    <activity
+        android:name=".Home_gift_add_activity"
         android:exported="true"/>
     <activity
         android:name=".SignUp_activity"

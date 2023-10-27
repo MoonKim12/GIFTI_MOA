@@ -10,9 +10,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
+import com.example.giftimoa.Collect_gift_add_activity
+import com.example.giftimoa.Home_gift_add_activity
 import com.example.giftimoa.R
 import com.example.giftimoa.Search_gift_activity
 import com.example.giftimoa.recyclierview_adpater_list.Banner_Adapter
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import me.relex.circleindicator.CircleIndicator3
 
 class Home_Fragment : Fragment() {
@@ -28,6 +31,7 @@ class Home_Fragment : Fragment() {
     ): View? {
         val rootView = inflater.inflate(R.layout.fragment_home_, container, false)
         val commonClickListener = ClickListeners.getCommonClickListener(requireActivity())
+
 
         //커피 아이콘 인텐트
         val Home_menu_list_coffee = rootView.findViewById<TextView>(R.id.home_ic_coffee)
@@ -104,6 +108,15 @@ class Home_Fragment : Fragment() {
         return rootView
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        // 플로팅 버튼 클릭 시 다음 화면의 액티비티로 이동
+        view.findViewById<FloatingActionButton>(R.id.fab_btn).setOnClickListener {
+            val intent = Intent(requireContext(), Home_gift_add_activity::class.java)
+            startActivity(intent)
+        }
+    }
 
     class ClickListeners {
         companion object {

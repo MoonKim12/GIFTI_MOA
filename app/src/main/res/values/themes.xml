@@ -3,10 +3,10 @@
     <style name="Theme.GiftiMoa" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/maincolor</item>
-        <item name="colorPrimaryVariant">#dedede</item>
+        <item name="colorPrimaryVariant">#A5A5A5</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="colorButtonNormal">#EEEEEE</item>
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     </style>
 
 </resources>

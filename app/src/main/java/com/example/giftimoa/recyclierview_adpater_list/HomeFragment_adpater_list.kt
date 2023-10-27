@@ -29,8 +29,7 @@ class HomeFragment_adpater_list(activity: FragmentActivity) : FragmentStateAdapt
             6 -> Home_Fragment_List_Snack()
             7 -> Home_Fragment_List_Movie()
             8 -> Home_Fragment_List_Icecream()
-            9 -> Home_Fragment_List_Giftcard()
-            else -> Home_Fragment_List_Coffee() // 기본값 설정
+            else -> Home_Fragment_List_Giftcard() // 기본값 설정
         }
     }
 }

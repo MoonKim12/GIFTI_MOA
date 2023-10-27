@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.textfield.TextInputEditText
+import com.example.giftimoa.databinding.LayoutSignUpBinding
 import com.google.gson.JsonObject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -18,32 +18,29 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import okhttp3.Response
 
 class SignUp_activity : AppCompatActivity() {
-    private lateinit var emailEditText: TextInputEditText
-    private lateinit var passwordEditText: TextInputEditText
-    private lateinit var confirmPasswordEditText: TextInputEditText
-    private lateinit var nameEditText: TextInputEditText
-    private lateinit var phoneNumberEditText: TextInputEditText
-    private lateinit var nicknameEditText: TextInputEditText
+    private lateinit var binding: LayoutSignUpBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_sign_up)
+        binding = LayoutSignUpBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val signUpButton: Button = findViewById(R.id.signup_button)
-        emailEditText = findViewById(R.id.ID_textField_editText)
-        passwordEditText = findViewById(R.id.PW_textField_editText)
-        confirmPasswordEditText = findViewById(R.id.PW_Re_textField_editText)
-        nameEditText = findViewById(R.id.username_editText)
-        phoneNumberEditText = findViewById(R.id.user_phone_number_editText)
-        nicknameEditText = findViewById(R.id.user_nickname_editText)
+        // 액션바 활성화
+        setSupportActionBar(binding.myToolbar)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
+        supportActionBar?.title ="회원가입"
+
+        val signUpButton: Button = binding.signupButton
 
         signUpButton.setOnClickListener {
             if (validateForm()) {
-                val email = emailEditText.text.toString()
-                val password = passwordEditText.text.toString()
-                val name = nameEditText.text.toString()
-                val phoneNumber = phoneNumberEditText.text.toString()
-                val username = nicknameEditText.text.toString()
+                val email = binding.IDTextFieldEditText.text.toString()
+                val password = binding.PWTextFieldEditText.text.toString()
+                val name = binding.usernameEditText.text.toString()
+                val phoneNumber = binding.userPhoneNumberEditText.text.toString()
+                val username = binding.userNicknameEditText.text.toString()
 
                 val url = "http://10.0.2.2:3000/signup3"
                 val json = JsonObject().apply {
@@ -90,40 +87,39 @@ class SignUp_activity : AppCompatActivity() {
     }
 
     private fun validateForm(): Boolean {
-        val email = emailEditText.text.toString()
-        val password = passwordEditText.text.toString()
-        val confirmPassword = confirmPasswordEditText.text.toString()
-        val name = nameEditText.text.toString()
-        val phoneNumber = phoneNumberEditText.text.toString()
-        val username = nicknameEditText.text.toString()
+        val email = binding.IDTextFieldEditText.text.toString()
+        val password = binding.PWTextFieldEditText.text.toString()
+        val confirmPassword = binding.PWReTextFieldEditText.text.toString()
+        val name = binding.usernameEditText.text.toString()
+        val phoneNumber = binding.userPhoneNumberEditText.text.toString()
+        val username = binding.userNicknameEditText.text.toString()
 
         if (!isValidEmail(email)) {
-            emailEditText.error = "올바른 이메일을 입력하세요."
+            binding.IDTextFieldEditText.error = "올바른 이메일을 입력하세요."
             return false
         } else {
-            emailEditText.error = null
+            binding.IDTextFieldEditText.error = null
         }
 
         if (password.length < 8 || !isValidPassword(password)) {
-            passwordEditText.error = "비밀번호는 8자 이상이어야 하며, 영어, 숫자, 특수 문자를 포함해야 합니다."
+            binding.PWTextFieldEditText.error = "비밀번호는 8자 이상이어야 하며, 영어, 숫자, 특수 문자를 포함해야 합니다."
             return false
         } else {
-            passwordEditText.error = null
+            binding.PWTextFieldEditText.error = null
         }
 
         if (password != confirmPassword) {
-            confirmPasswordEditText.error = "비밀번호가 일치하지 않습니다."
+            binding.PWReTextFieldEditText.error = "비밀번호가 일치하지 않습니다."
             return false
         } else {
-            confirmPasswordEditText.error = null
+            binding.PWReTextFieldEditText.error = null
         }
 
-
         if (!isValidPhoneNumber(phoneNumber)) {
-            phoneNumberEditText.error = "올바른 핸드폰 번호를 입력하세요."
+            binding.userPhoneNumberEditText.error = "올바른 핸드폰 번호를 입력하세요."
             return false
         } else {
-            phoneNumberEditText.error = null
+            binding.userPhoneNumberEditText.error = null
         }
         if (name.isEmpty() || username.isEmpty()) {
             Toast.makeText(this, "빈칸을 입력하세요.", Toast.LENGTH_SHORT).show()
@@ -146,5 +142,10 @@ class SignUp_activity : AppCompatActivity() {
     private fun isValidPhoneNumber(phoneNumber: String): Boolean {
         val phoneNumberPattern = "^01[0-9]{8,9}$"
         return phoneNumber.matches(phoneNumberPattern.toRegex())
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

@@ -25,6 +25,8 @@ class Login_activity : AppCompatActivity() {
         val Login_Sign_up = findViewById<TextView>(R.id.Login_Sign_up)
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         val loginButton = findViewById<Button>(R.id.loginButton)
+        val login_ID_Find = findViewById<TextView>(R.id.Login_ID_Find)
+        val login_PW_Find = findViewById<TextView>(R.id.Login_PW_Find)
 
         // 로그인 버튼 클릭 시 이벤트 처리
         loginButton.setOnClickListener(View.OnClickListener {
@@ -98,10 +100,23 @@ class Login_activity : AppCompatActivity() {
             }.start()
         })
 
-        //회원가입 버튼 클릭 이벤트
+        //회원가입 클릭 이벤트
         Login_Sign_up.setOnClickListener {
             val intent = Intent(this, SignUp_activity::class.java)
             startActivity(intent)
+
+        }
+        //아이디 찾기 클릭
+        login_ID_Find.setOnClickListener {
+            val intent = Intent(this, ID_Find_activity::class.java)
+            startActivity(intent)
+
+        }
+        //비밀번호 클릭
+        login_PW_Find.setOnClickListener {
+            val intent = Intent(this, PW_Find_activity::class.java)
+            startActivity(intent)
+
         }
     }
 }
