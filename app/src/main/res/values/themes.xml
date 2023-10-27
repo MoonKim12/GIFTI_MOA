@@ -5,6 +5,7 @@
         <item name="colorPrimary">@color/maincolor</item>
         <item name="colorPrimaryVariant">#dedede</item>
         <item name="colorOnPrimary">@color/white</item>
+        <item name="colorButtonNormal">#EEEEEE</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 

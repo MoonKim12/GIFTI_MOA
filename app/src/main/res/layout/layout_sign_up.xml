@@ -115,6 +115,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14dp"
+                android:singleLine="true"
+                android:maxLines="1"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -138,6 +140,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:textSize="14dp"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -153,13 +156,16 @@
             android:layout_marginBottom="10dp"
             app:boxBackgroundColor="@color/white"
             app:boxStrokeColor="#8b00ff"
-            android:hint="닉네임">
+            android:hint="닉네임"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
                android:id="@+id/user_nickname_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="14dp"
+                android:singleLine="true"
+                android:maxLines="1"
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
