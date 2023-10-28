@@ -8,11 +8,24 @@
     android:orientation="vertical"
     android:background="@color/grayF1">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
     <!--중고 장터 배너-->
+
     <FrameLayout
         android:id="@+id/marketplace_banner"
         android:layout_width="match_parent"
-        android:layout_height="220dp">
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:layout_marginTop="65dp">
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewpager"
@@ -21,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="0dp"/>
 
         <me.relex.circleindicator.CircleIndicator3
             android:id="@+id/indicator"
@@ -33,10 +46,12 @@
 
     <!--기프티콘 아이콘 목록-->
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:layout_marginTop="216dp">
+        android:layout_marginTop="275dp"
+        android:background="@color/white">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -48,9 +63,10 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:background="@color/black"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="1"
-                android:gravity="center"/>
+                android:textColor="@color/white" />
+
             <TextView
                 android:id="@+id/home_ic_chicken"
                 android:layout_width="50dp"
@@ -58,9 +74,9 @@
                 android:layout_marginLeft="105dp"
                 android:layout_marginTop="10dp"
                 android:background="@color/black"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="2"
-                android:gravity="center"/>
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/home_ic_pizza"
@@ -72,6 +88,7 @@
                 android:gravity="center"
                 android:text="3"
                 android:textColor="@color/white" />
+
             <TextView
                 android:id="@+id/home_ic_festfood"
                 android:layout_width="50dp"
@@ -79,9 +96,10 @@
                 android:layout_marginLeft="255dp"
                 android:layout_marginTop="10dp"
                 android:background="@color/black"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="4"
-                android:gravity="center"/>
+                android:textColor="@color/white" />
+
             <TextView
                 android:id="@+id/home_ic_mart"
                 android:layout_width="50dp"
@@ -89,9 +107,9 @@
                 android:layout_marginLeft="330dp"
                 android:layout_marginTop="10dp"
                 android:background="@color/black"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="5"
-                android:gravity="center"/>
+                android:textColor="@color/white" />
 
             <!--하단 아이콘-->
             <TextView
@@ -101,9 +119,9 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="85dp"
                 android:background="@color/black"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="1"
-                android:gravity="center"/>
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/home_ic_icecream"
@@ -112,9 +130,9 @@
                 android:layout_marginLeft="105dp"
                 android:layout_marginTop="85dp"
                 android:background="@color/black"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="2"
-                android:gravity="center"/>
+                android:textColor="@color/white" />
 
             <TextView
                 android:id="@+id/home_ic_snack"
@@ -126,6 +144,7 @@
                 android:gravity="center"
                 android:text="3"
                 android:textColor="@color/white" />
+
             <TextView
                 android:id="@+id/home_ic_movie"
                 android:layout_width="50dp"
@@ -133,9 +152,10 @@
                 android:layout_marginLeft="255dp"
                 android:layout_marginTop="85dp"
                 android:background="@color/black"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="4"
-                android:gravity="center"/>
+                android:textColor="@color/white" />
+
             <TextView
                 android:id="@+id/home_ic_giftcard"
                 android:layout_width="50dp"
@@ -143,9 +163,9 @@
                 android:layout_marginLeft="330dp"
                 android:layout_marginTop="85dp"
                 android:background="@color/black"
-                android:textColor="@color/white"
+                android:gravity="center"
                 android:text="5"
-                android:gravity="center"/>
+                android:textColor="@color/white" />
 
             <!--상단 아이콘 목록 이름-->
             <TextView
@@ -153,46 +173,50 @@
                 android:layout_height="20dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="60dp"
-                android:text="커피"
                 android:gravity="center"
+                android:text="커피"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="105dp"
                 android:layout_marginTop="60dp"
-                android:text="치킨"
                 android:gravity="center"
+                android:text="치킨"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="180dp"
                 android:layout_marginTop="60dp"
-                android:text="피자"
                 android:gravity="center"
+                android:text="피자"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="255dp"
                 android:layout_marginTop="60dp"
-                android:text="패스트푸드"
                 android:gravity="center"
+                android:text="패스트푸드"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="325dp"
                 android:layout_marginTop="60dp"
-                android:text="편의점･마트"
                 android:gravity="center"
+                android:text="편의점･마트"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <!--하단 아이콘 목록 이름-->
             <TextView
@@ -200,54 +224,61 @@
                 android:layout_height="20dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="133dp"
-                android:text="베이커리"
                 android:gravity="center"
+                android:text="베이커리"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="105dp"
                 android:layout_marginTop="133dp"
-                android:text="아이스크림"
                 android:gravity="center"
+                android:text="아이스크림"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="180dp"
                 android:layout_marginTop="133dp"
-                android:text="외식･분식"
                 android:gravity="center"
+                android:text="외식･분식"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="255dp"
                 android:layout_marginTop="133dp"
-                android:text="영화"
                 android:gravity="center"
+                android:text="영화"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="50dp"
                 android:layout_height="20dp"
                 android:layout_marginLeft="330dp"
                 android:layout_marginTop="133dp"
-                android:text="상품권"
                 android:gravity="center"
+                android:text="상품권"
                 android:textSize="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </RelativeLayout>
     </LinearLayout>
 
     <!--중고 아이템 목록-->
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="374dp">
+        android:layout_marginTop="430dp"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="bottom|center">
 
 
     </androidx.recyclerview.widget.RecyclerView>

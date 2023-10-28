@@ -126,6 +126,25 @@
                         android:inputType="textMultiLine|textNoSuggestions"
                         android:paddingLeft="6dp"
                         android:textColor="@color/black"
+                        tools:ignore="TouchTargetSizeCheck"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="상품설명"
+                        android:layout_marginLeft="6dp"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"/>
+
+                    <EditText
+                        android:id="@+id/Product_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/border"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/black"
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
@@ -134,6 +153,7 @@
                         android:layout_height="wrap_content"
                         android:background="@drawable/button_solid"
                         android:layout_marginTop="20dp"
+                        android:maxLines="100"
                         android:text="기 프 티 콘 등 록"/>
                 </LinearLayout>
 

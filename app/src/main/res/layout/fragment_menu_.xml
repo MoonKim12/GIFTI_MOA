@@ -1,19 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".bottom_nav_fragment.Menu_Fragment">
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+        <variable
+            name="user"
+            type="com.example.giftimoa.dto.User" />
+        <variable
+            name="noti_time"
+            type="String" />
+    </data>
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Menu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_a90"
+        android:paddingBottom="?attr/actionBarSize">
+
+        <LinearLayout
+
+            android:id="@+id/l_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="12dp"
+            android:background="@drawable/change_color_press_white"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_level"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@+id/iv_level">
+
+                    <TextView
+                        android:id="@+id/tv_title_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account"
+                        style="@style/Bold"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_account"
+                        style="@style/Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{user.email}"
+                        android:textSize="12sp"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_title_account"
+                        app:layout_constraintLeft_toLeftOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ImageView
+                    android:id="@+id/iv_title_account"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="9dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/join"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:visibility="gone"
+                style="@style/Bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_noti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:background="@color/white_a90"
+            app:layout_constraintTop_toBottomOf="@+id/l_account">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:paddingTop="4dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="4dp"
+                android:background="@color/grey_09"
+                app:layout_constraintTop_toBottomOf="@+id/l_account">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/noti"
+                    style="@style/Bold"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switch_noti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/switch_Orange"
+                    android:checked="@{user.alarm==0 ? false : true}"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white_a90">
+
+                <LinearLayout
+                    android:id="@+id/l_noti_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="34dp"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/change_color_press_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_noti_title_first"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noti_title_first"
+                        android:textSize="12sp"
+                        android:textColor="@color/black_03"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_noti_setting_first"
+                            style="@style/Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="@{String.valueOf(user.nday)}"/>
+
+                        <TextView
+                            android:id="@+id/tv_noti_setting_first_text"
+                            style="@style/Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="@string/first" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l_noti_interval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="34dp"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/change_color_press_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_noti_title_interval"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noti_title_interval"
+                        android:textSize="12sp"
+                        android:textColor="@color/black_03"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_noti_setting_interval"
+                            style="@style/Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="@{String.valueOf(user.term)}" />
+
+                        <TextView
+                            android:id="@+id/tv_noti_setting_interval_text"
+                            style="@style/Regular"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:text="@string/interval" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l_noti_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="34dp"
+                    android:paddingLeft="34dp"
+                    android:paddingBottom="8dp"
+                    android:background="@drawable/change_color_press_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_noti_title_time"
+                        style="@style/Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noti_title_time"
+                        android:textSize="12sp"
+                        android:textColor="@color/black_03"/>
+
+                    <TextView
+                        android:id="@+id/tv_noti_setting_time"
+                        style="@style/Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="@{noti_time}"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_logout"
+            style="@style/Bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:paddingTop="16dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/change_color_press_white"
+            android:text="@string/logout"
+            app:layout_constraintTop_toBottomOf="@+id/l_noti"
+            android:foreground="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/tv_withdraw"
+            style="@style/Regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:paddingTop="16dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/change_color_press_white"
+            android:text="@string/withdraw"
+            android:textSize="12sp"
+            android:textColor="@color/grey_06"
+            app:layout_constraintTop_toBottomOf="@+id/tv_logout"
+            android:foreground="?attr/selectableItemBackground"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

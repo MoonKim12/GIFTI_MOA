@@ -12,8 +12,9 @@ class Collect_gift_add_activity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.myToolbar)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
+        supportActionBar?.setDisplayShowTitleEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.title = "기프티콘 등록"
     }
 
 

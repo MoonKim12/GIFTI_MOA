@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="black_01">#000000</color>
+    <color name="black_01_a08">#14000000</color>
+    <color name="black_02">#111111</color>
+    <color name="black_03">#0C0D0D</color>
+
     <color name="white">#FFFFFFFF</color>
+    <color name="white_a90">#E6FFFFFF</color>
     <color name="grayEC">#ECECEC</color>
     <color name="grayF1">#F1F1F1</color>
     <color name="maincolor">#FF8B00FF</color>
     <color name="blackshadow">#303030</color>
     <color name="brown">#604309</color>
+    <color name="orange">#F7B733</color>
+
+    <!--회색-->
     <color name="grey_01">#5f5f69</color>
     <color name="grey_02">#52514d</color>
     <color name="grey_03">#555555</color>
@@ -16,4 +25,5 @@
     <color name="grey_07">#d6d6d6</color>
     <color name="grey_08">#e9e9e9</color>
     <color name="grey_09">#eeeff1</color>
+
 </resources>
