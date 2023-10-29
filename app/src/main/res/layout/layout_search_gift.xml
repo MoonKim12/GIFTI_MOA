@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Search_gift_activity">
+    tools:context=".Search_gift_activity"
+    android:background="@color/grey_09">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -27,6 +28,7 @@
         app:tabRippleColor="@color/blackshadow"
         app:tabMode="scrollable"
         app:tabGravity="start"
+        android:background="@color/white"
         >
         <com.google.android.material.tabs.TabItem
             android:id="@+id/home_ic_search_coffee"

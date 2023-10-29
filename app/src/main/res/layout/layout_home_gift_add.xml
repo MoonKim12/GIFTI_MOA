@@ -145,7 +145,8 @@
                         android:inputType="textMultiLine|textNoSuggestions"
                         android:paddingLeft="6dp"
                         android:textColor="@color/black"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        tools:ignore="TouchTargetSizeCheck"
+                        android:gravity="top"/>
 
                     <Button
                         android:foreground="?attr/selectableItemBackground"

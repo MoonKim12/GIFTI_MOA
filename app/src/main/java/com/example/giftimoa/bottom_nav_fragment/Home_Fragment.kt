@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
@@ -32,6 +34,9 @@ class Home_Fragment : Fragment() {
         val rootView = inflater.inflate(R.layout.fragment_home_, container, false)
         val commonClickListener = ClickListeners.getCommonClickListener(requireActivity())
 
+        val toolbar = rootView.findViewById<Toolbar>(R.id.my_toolbar)
+        (requireActivity() as AppCompatActivity).setSupportActionBar(toolbar)
+        (requireActivity() as AppCompatActivity).supportActionBar?.title = "GIFTIMOA"
 
         //커피 아이콘 인텐트
         val Home_menu_list_coffee = rootView.findViewById<TextView>(R.id.home_ic_coffee)

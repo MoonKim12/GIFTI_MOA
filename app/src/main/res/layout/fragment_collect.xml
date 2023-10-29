@@ -5,14 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".bottom_nav_fragment.Collect_fragment"
+    android:background="@color/grey_09"
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/white" />
+        android:background="@color/white"
+        android:elevation="11dp"/>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_09"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_noGifticon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기프티콘을 등록해주세요!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="center"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_btn"
