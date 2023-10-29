@@ -6,7 +6,7 @@ import androidx.appcompat.widget.Toolbar
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import androidx.viewpager2.widget.ViewPager2
-import com.example.giftimoa.recyclierview_adpater_list.HomeFragment_adpater_list
+import com.example.giftimoa.adpater_list.HomeFragment_adpater_list
 
 class Search_gift_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

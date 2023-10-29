@@ -5,56 +5,52 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.giftimoa.R
+import com.example.giftimoa.Search_gift_activity
+import com.example.giftimoa.dto.Search_Gift
+import com.example.giftimoa.adpater_list.RecyclerViewSearchGiftAdapter
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Home_Fragment_List_Giftcard.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Home_Fragment_List_Giftcard : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+    private var recyclerView: RecyclerView? = null
+    private var recyclerViewSearchGiftAdapter: RecyclerViewSearchGiftAdapter? = null
+    private var giftList = mutableListOf<Search_Gift>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_list_giftcard, container, false)
+        val view = inflater.inflate(R.layout.fragment_home_list_giftcard, container, false)
+
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Home_Fragment_List_Giftcard.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Home_Fragment_List_Giftcard().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        recyclerView = view.findViewById(R.id.rv_giftcard)
+        recyclerViewSearchGiftAdapter = RecyclerViewSearchGiftAdapter(requireActivity() as Search_gift_activity, giftList)
+        val layoutManager: RecyclerView.LayoutManager = GridLayoutManager(requireActivity(), 3)
+        recyclerView!!.layoutManager = layoutManager
+        recyclerView!!.adapter = recyclerViewSearchGiftAdapter
+
+        // 이 부분에서 데이터를 초기화하도록 수정
+        prepareGiftListData()
     }
+
+    private fun prepareGiftListData() {
+        var gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+
+
+        recyclerViewSearchGiftAdapter!!.notifyDataSetChanged()
+    }
+
 }

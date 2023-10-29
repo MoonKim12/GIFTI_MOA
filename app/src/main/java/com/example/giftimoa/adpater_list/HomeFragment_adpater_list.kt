@@ -1,4 +1,4 @@
-package com.example.giftimoa.recyclierview_adpater_list
+package com.example.giftimoa.adpater_list
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

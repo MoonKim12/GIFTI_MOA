@@ -7,7 +7,7 @@
     tools:context=".home_fragment_List.Home_Fragment_List_Snack">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_coffee"
+        android:id="@+id/rv_snack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="5dp"

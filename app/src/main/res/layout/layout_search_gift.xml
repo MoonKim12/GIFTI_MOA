@@ -29,6 +29,7 @@
         app:tabMode="scrollable"
         app:tabGravity="start"
         android:background="@color/white"
+        android:elevation="3dp"
         >
         <com.google.android.material.tabs.TabItem
             android:id="@+id/home_ic_search_coffee"

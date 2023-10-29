@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.giftimoa.R
 import com.example.giftimoa.Search_gift_activity
 import com.example.giftimoa.dto.Search_Gift
-import com.example.giftimoa.recyclierview_adpater_list.RecyclerViewSearchGiftAdapter
+import com.example.giftimoa.adpater_list.RecyclerViewSearchGiftAdapter
 
 class Home_Fragment_List_Coffee : Fragment() {
     private var recyclerView: RecyclerView? = null
@@ -46,15 +46,44 @@ class Home_Fragment_List_Coffee : Fragment() {
     private fun prepareGiftListData() {
         var gift = Search_Gift("공차", R.drawable.gongcha)
         giftList.add(gift)
-
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
+        gift = Search_Gift("공차", R.drawable.gongcha)
+        giftList.add(gift)
         gift = Search_Gift("공차", R.drawable.gongcha)
         giftList.add(gift)
 
-        gift = Search_Gift("공차", R.drawable.gongcha)
-        giftList.add(gift)
-
-        gift = Search_Gift("공차", R.drawable.gongcha)
-        giftList.add(gift)
-        // 다른 아이템을 추가하려면 위의 코드를 반복
+        recyclerViewSearchGiftAdapter!!.notifyDataSetChanged()
     }
+
 }

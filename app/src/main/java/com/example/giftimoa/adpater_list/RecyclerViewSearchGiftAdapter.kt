@@ -1,4 +1,4 @@
-package com.example.giftimoa.recyclierview_adpater_list
+package com.example.giftimoa.adpater_list
 
 import android.view.LayoutInflater
 import android.view.View
