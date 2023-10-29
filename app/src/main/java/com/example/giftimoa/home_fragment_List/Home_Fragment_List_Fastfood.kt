@@ -44,9 +44,13 @@ class Home_Fragment_List_Fastfood : Fragment() {
     }
 
     private fun prepareGiftListData() {
-        var gift = Search_Gift("공차", R.drawable.gongcha)
+        var gift = Search_Gift("KFC", R.drawable.img_brand_kfc)
         giftList.add(gift)
-        gift = Search_Gift("공차", R.drawable.gongcha)
+        gift = Search_Gift("롯데리아", R.drawable.img_brand_lottelia)
+        giftList.add(gift)
+        gift = Search_Gift("버거킹", R.drawable.img_brand_buggerking)
+        giftList.add(gift)
+        gift = Search_Gift("맥도날드", R.drawable.img_brand_macdonald)
         giftList.add(gift)
 
 

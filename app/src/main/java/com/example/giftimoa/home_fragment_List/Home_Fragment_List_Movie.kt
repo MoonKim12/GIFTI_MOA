@@ -44,9 +44,15 @@ class Home_Fragment_List_Movie : Fragment() {
     }
 
     private fun prepareGiftListData() {
-        var gift = Search_Gift("공차", R.drawable.gongcha)
+        var gift = Search_Gift("CGV", R.drawable.img_brand_cgv)
         giftList.add(gift)
-        gift = Search_Gift("공차", R.drawable.gongcha)
+        gift = Search_Gift("교보문고", R.drawable.img_brand_gyubo)
+        giftList.add(gift)
+        gift = Search_Gift("롯데시네마", R.drawable.img_brand_lottecynema)
+        giftList.add(gift)
+        gift = Search_Gift("메가박스", R.drawable.img_brand_megabox)
+        giftList.add(gift)
+        gift = Search_Gift("영풍문고", R.drawable.img_brand_yp_books)
         giftList.add(gift)
 
 

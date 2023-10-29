@@ -44,9 +44,9 @@ class Home_Fragment_List_Mart : Fragment() {
     }
 
     private fun prepareGiftListData() {
-        var gift = Search_Gift("공차", R.drawable.gongcha)
+        var gift = Search_Gift("공차", R.drawable.img_brand_gongcha)
         giftList.add(gift)
-        gift = Search_Gift("공차", R.drawable.gongcha)
+        gift = Search_Gift("공차", R.drawable.img_brand_gongcha)
         giftList.add(gift)
 
 

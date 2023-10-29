@@ -44,9 +44,25 @@ class Home_Fragment_List_Snack : Fragment() {
     }
 
     private fun prepareGiftListData() {
-        var gift = Search_Gift("공차", R.drawable.gongcha)
+        var gift = Search_Gift("에슐리", R.drawable.img_brand_ashley)
         giftList.add(gift)
-        gift = Search_Gift("공차", R.drawable.gongcha)
+        gift = Search_Gift("배달의민족", R.drawable.img_brand_bedalminjok)
+        giftList.add(gift)
+        gift = Search_Gift("본죽", R.drawable.img_brand_bon_porridge)
+        giftList.add(gift)
+        gift = Search_Gift("본죽&비빔밥", R.drawable.img_brand_bon_porridge_bibimbob)
+        giftList.add(gift)
+        gift = Search_Gift("본도시락", R.drawable.img_brand_bondosirok)
+        giftList.add(gift)
+        gift = Search_Gift("이삭토스트", R.drawable.img_brand_isaac_toast)
+        giftList.add(gift)
+        gift = Search_Gift("아웃백", R.drawable.img_brand_outback)
+        giftList.add(gift)
+        gift = Search_Gift("돼지게티", R.drawable.img_brand_pig_spagetti)
+        giftList.add(gift)
+        gift = Search_Gift("서브웨이", R.drawable.img_brand_subway)
+        giftList.add(gift)
+        gift = Search_Gift("요기요", R.drawable.img_brand_yogiyo)
         giftList.add(gift)
 
 

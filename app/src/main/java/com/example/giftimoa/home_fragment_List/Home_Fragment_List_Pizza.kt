@@ -44,9 +44,15 @@ class Home_Fragment_List_Pizza : Fragment() {
     }
 
     private fun prepareGiftListData() {
-        var gift = Search_Gift("공차", R.drawable.gongcha)
+        var gift = Search_Gift("도미노피자", R.drawable.img_brand_domino)
         giftList.add(gift)
-        gift = Search_Gift("공차", R.drawable.gongcha)
+        gift = Search_Gift("mr.피자", R.drawable.img_brand_mr_pizza)
+        giftList.add(gift)
+        gift = Search_Gift("피자알볼로", R.drawable.img_brand_pizza_alvolo)
+        giftList.add(gift)
+        gift = Search_Gift("피자헛", R.drawable.img_brand_pizzahut)
+        giftList.add(gift)
+        gift = Search_Gift("피자마루", R.drawable.img_brand_pizzamaru)
         giftList.add(gift)
 
 

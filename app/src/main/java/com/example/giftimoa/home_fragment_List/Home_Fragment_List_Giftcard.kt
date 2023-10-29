@@ -44,9 +44,17 @@ class Home_Fragment_List_Giftcard : Fragment() {
     }
 
     private fun prepareGiftListData() {
-        var gift = Search_Gift("공차", R.drawable.gongcha)
+        var gift = Search_Gift("CJ ONE GIFTCARD", R.drawable.img_brand_cjgiftcard)
         giftList.add(gift)
-        gift = Search_Gift("공차", R.drawable.gongcha)
+        gift = Search_Gift("컬쳐랜드", R.drawable.img_brand_cultureland)
+        giftList.add(gift)
+        gift = Search_Gift("구글 기프트카드", R.drawable.img_brand_google_giftcard)
+        giftList.add(gift)
+        gift = Search_Gift("해피머니", R.drawable.img_brand_happy_money)
+        giftList.add(gift)
+        gift = Search_Gift("카카오페이지", R.drawable.img_brand_kakaopage)
+        giftList.add(gift)
+        gift = Search_Gift("네이버페이", R.drawable.img_brand_naver_pay)
         giftList.add(gift)
 
 

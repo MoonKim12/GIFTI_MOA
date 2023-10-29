@@ -23,7 +23,7 @@
         <ImageView
             android:id="@+id/iv_product_preview"
             android:layout_width="0dp"
-            android:layout_height="95dp"
+            android:layout_height="85dp"
             android:background="@color/grey_09"
             android:scaleType="centerCrop"
             android:adjustViewBounds="true"

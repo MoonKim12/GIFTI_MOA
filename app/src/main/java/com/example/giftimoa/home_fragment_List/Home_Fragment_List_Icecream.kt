@@ -44,10 +44,15 @@ class Home_Fragment_List_Icecream : Fragment() {
     }
 
     private fun prepareGiftListData() {
-        var gift = Search_Gift("공차", R.drawable.gongcha)
+        var gift = Search_Gift("베스킨라빈스", R.drawable.img_brand_baskin_robbins)
         giftList.add(gift)
-        gift = Search_Gift("공차", R.drawable.gongcha)
+        gift = Search_Gift("해피콘", R.drawable.img_brand_happy_con)
         giftList.add(gift)
+        gift = Search_Gift("나뚜루", R.drawable.img_brand_naturu)
+        giftList.add(gift)
+        gift = Search_Gift("설빙", R.drawable.img_brand_sulbing)
+        giftList.add(gift)
+        
 
 
         recyclerViewSearchGiftAdapter!!.notifyDataSetChanged()

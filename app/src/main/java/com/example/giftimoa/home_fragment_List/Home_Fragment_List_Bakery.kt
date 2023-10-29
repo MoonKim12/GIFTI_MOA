@@ -44,9 +44,17 @@ class Home_Fragment_List_Bakery : Fragment() {
     }
 
     private fun prepareGiftListData() {
-        var gift = Search_Gift("공차", R.drawable.gongcha)
+        var gift = Search_Gift("던킨도너츠", R.drawable.img_brand_dunkin)
         giftList.add(gift)
-        gift = Search_Gift("공차", R.drawable.gongcha)
+        gift = Search_Gift("한스케이크", R.drawable.img_brand_hans)
+        giftList.add(gift)
+        gift = Search_Gift("홍루이젠", R.drawable.img_brand_hongruizen)
+        giftList.add(gift)
+        gift = Search_Gift("파리바게트", R.drawable.img_brand_paris_baguette)
+        giftList.add(gift)
+        gift = Search_Gift("파리크라상", R.drawable.img_brand_paris_crossant)
+        giftList.add(gift)
+        gift = Search_Gift("뚜레주루", R.drawable.img_brand_tous_res_jour)
         giftList.add(gift)
 
         recyclerViewSearchGiftAdapter!!.notifyDataSetChanged()
