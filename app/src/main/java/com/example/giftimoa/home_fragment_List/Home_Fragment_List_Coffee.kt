@@ -36,8 +36,8 @@ class Home_Fragment_List_Coffee : Fragment() {
         recyclerView = view.findViewById(R.id.rv_coffee)
         recyclerViewSearchGiftAdapter = RecyclerViewSearchGiftAdapter(requireActivity() as Search_gift_activity, giftList)
         val layoutManager: RecyclerView.LayoutManager = GridLayoutManager(requireActivity(), 3)
-        recyclerView?.layoutManager = layoutManager
-        recyclerView?.adapter = recyclerViewSearchGiftAdapter
+        recyclerView!!.layoutManager = layoutManager
+        recyclerView!!.adapter = recyclerViewSearchGiftAdapter
 
         // 이 부분에서 데이터를 초기화하도록 수정
         prepareGiftListData()
@@ -52,6 +52,7 @@ class Home_Fragment_List_Coffee : Fragment() {
 
         gift = Search_Gift("공차", R.drawable.gongcha)
         giftList.add(gift)
+
         gift = Search_Gift("공차", R.drawable.gongcha)
         giftList.add(gift)
         // 다른 아이템을 추가하려면 위의 코드를 반복

@@ -24,6 +24,8 @@ class Login_activity : AppCompatActivity() {
         // XML에서 정의한 위젯들과 연결
         val emailEditText = findViewById<EditText>(R.id.emailEditText)
         val Login_Sign_up = findViewById<TextView>(R.id.Login_Sign_up)
+        val Search_ID = findViewById<TextView>(R.id.Login_ID_Find)
+        val Search_PW = findViewById<TextView>(R.id.Login_PW_Find)
         val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
         val loginButton = findViewById<Button>(R.id.loginButton)
 
@@ -102,6 +104,16 @@ class Login_activity : AppCompatActivity() {
         //회원가입 버튼 클릭 이벤트
         Login_Sign_up.setOnClickListener {
             val intent = Intent(this, SignUp_activity::class.java)
+            startActivity(intent)
+        }
+
+        Search_ID.setOnClickListener {
+            val intent = Intent(this, ID_Find_activity::class.java)
+            startActivity(intent)
+        }
+
+        Search_PW.setOnClickListener {
+            val intent = Intent(this, PW_Find_activity::class.java)
             startActivity(intent)
         }
 
