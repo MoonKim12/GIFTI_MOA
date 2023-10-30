@@ -12,141 +12,140 @@
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/maincolor"
+        android:background="@color/white"
         android:elevation="4dp"
         app:titleTextColor="@color/white"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
+    <!--닉네임 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="GIFTI MOA"
-        android:textSize="30dp"
-        android:gravity="center"
-        android:textColor="#8b00ff"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="GIFTI MOA"
+            android:textColor="#8b00ff"
 
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"
-        />
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
         <!--이메일 -->
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/ID_textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="10dp"
+            android:hint="이메일"
             app:boxBackgroundColor="@color/white"
-            app:errorEnabled="true"
             app:boxStrokeColor="#8b00ff"
             app:boxStrokeErrorColor="#ff0000"
-            android:hint="이메일">
+            app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/ID_textField_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:textSize="14dp"
-                />
+                android:textSize="14dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!--비밀번호 -->
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/PW_textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="10dp"
+            android:hint="비밀번호"
             app:boxBackgroundColor="@color/white"
-            app:boxStrokeColor="#8b00ff"
-            android:hint="비밀번호">
+            app:boxStrokeColor="#8b00ff">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/PW_textField_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textSize="14dp"
-                />
+                android:textSize="14dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!--비밀번호 재확인 -->
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/PW_Re_textField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="10dp"
+            android:hint="비밀번호 확인"
             app:boxBackgroundColor="@color/white"
-            app:boxStrokeColor="#8b00ff"
-            android:hint="비밀번호 확인">
+            app:boxStrokeColor="#8b00ff">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/PW_Re_textField_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:textSize="14dp"
-                />
+                android:textSize="14dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!--이름 -->
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="10dp"
+            android:hint="이름"
             app:boxBackgroundColor="@color/white"
-            app:boxStrokeColor="#8b00ff"
-            android:hint="이름">
+            app:boxStrokeColor="#8b00ff">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="14dp"
-                android:singleLine="true"
                 android:maxLines="1"
-                />
+                android:singleLine="true"
+                android:textSize="14dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
         <!--휴대폰번호 -->
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/user_phone_number"
-            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="270dp"
             android:layout_height="55dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
             android:layout_marginBottom="10dp"
+            android:hint="휴대폰번호( ' - ' 없이 입력)"
             app:boxBackgroundColor="@color/white"
-            app:boxStrokeColor="#8b00ff"
-            android:hint="휴대폰번호( ' - ' 없이 입력)">
+            app:boxStrokeColor="#8b00ff">
 
             <com.google.android.material.textfield.TextInputEditText
-               android:id="@+id/user_phone_number_editText"
+                android:id="@+id/user_phone_number_editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
@@ -155,12 +154,26 @@
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/phone_double_check"
+                android:layout_width="79dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="305dp"
+                android:text="중복확인"
+                android:textSize="12dp"
+                android:background="@drawable/border_icon_solid"
+                android:textColor="@color/blackshadow"/>
 
-        <!--닉네임 -->
-        <com.google.android.material.textfield.TextInputLayout
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/user_nickname"
-            android:layout_width="match_parent"
+            android:layout_width="270dp"
             android:layout_height="55dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
@@ -180,7 +193,17 @@
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
-
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/nickname_double_check"
+                android:layout_width="79dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="305dp"
+                android:text="중복확인"
+                android:textSize="12dp"
+                android:background="@drawable/border_icon_solid"
+                android:textColor="@color/blackshadow"/>
+        </RelativeLayout>
     </LinearLayout>
 
 
