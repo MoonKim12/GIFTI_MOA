@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -38,43 +39,43 @@ class Home_Fragment : Fragment() {
         (requireActivity() as AppCompatActivity).supportActionBar?.title = "GIFTIMOA"
 
         //커피 아이콘 인텐트
-        val Home_menu_list_coffee = rootView.findViewById<TextView>(R.id.home_ic_coffee)
+        val Home_menu_list_coffee = rootView.findViewById<ImageView>(R.id.home_ic_coffee)
         Home_menu_list_coffee.setOnClickListener(commonClickListener)
 
         //치킨 아이콘 인텐트
-        val Home_menu_list_chiken = rootView.findViewById<TextView>(R.id.home_ic_chicken)
+        val Home_menu_list_chiken = rootView.findViewById<ImageView>(R.id.home_ic_chicken)
         Home_menu_list_chiken.setOnClickListener(commonClickListener)
 
         //피자 아이콘 인텐트
-        val Home_menu_list_pizza = rootView.findViewById<TextView>(R.id.home_ic_pizza)
+        val Home_menu_list_pizza = rootView.findViewById<ImageView>(R.id.home_ic_pizza)
         Home_menu_list_pizza.setOnClickListener(commonClickListener)
 
         //패스트푸드 아이콘 인텐트
-        val Home_menu_list_fastfood = rootView.findViewById<TextView>(R.id.home_ic_festfood)
+        val Home_menu_list_fastfood = rootView.findViewById<ImageView>(R.id.home_ic_festfood)
         Home_menu_list_fastfood.setOnClickListener(commonClickListener)
 
         //마트,편의점 아이콘 인텐트
-        val Home_menu_list_mart = rootView.findViewById<TextView>(R.id.home_ic_mart)
+        val Home_menu_list_mart = rootView.findViewById<ImageView>(R.id.home_ic_mart)
         Home_menu_list_mart.setOnClickListener(commonClickListener)
 
         //베이커리 아이콘 인텐트
-        val Home_menu_list_bakery = rootView.findViewById<TextView>(R.id.home_ic_bread)
+        val Home_menu_list_bakery = rootView.findViewById<ImageView>(R.id.home_ic_bread)
         Home_menu_list_bakery.setOnClickListener(commonClickListener)
 
         //아이스크림 아이콘 인텐트
-        val Home_menu_list_icecream = rootView.findViewById<TextView>(R.id.home_ic_icecream)
+        val Home_menu_list_icecream = rootView.findViewById<ImageView>(R.id.home_ic_icecream)
         Home_menu_list_icecream.setOnClickListener(commonClickListener)
 
         //스낵 아이콘 인텐트
-        val Home_menu_list_snack = rootView.findViewById<TextView>(R.id.home_ic_snack)
+        val Home_menu_list_snack = rootView.findViewById<ImageView>(R.id.home_ic_snack)
         Home_menu_list_snack.setOnClickListener(commonClickListener)
 
         //영화 아이콘 인텐트
-        val Home_menu_list_movie = rootView.findViewById<TextView>(R.id.home_ic_movie)
+        val Home_menu_list_movie = rootView.findViewById<ImageView>(R.id.home_ic_movie)
         Home_menu_list_movie.setOnClickListener(commonClickListener)
 
         //상품권 아이콘 인텐트
-        val Home_menu_list_giftcard = rootView.findViewById<TextView>(R.id.home_ic_giftcard)
+        val Home_menu_list_giftcard = rootView.findViewById<ImageView>(R.id.home_ic_giftcard)
         Home_menu_list_giftcard.setOnClickListener(commonClickListener)
 
         // ViewPager2

@@ -56,116 +56,97 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <!--상단 아이콘-->
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_coffee"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_coffee1" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_chicken"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="105dp"
                 android:layout_marginTop="10dp"
-                android:background="@color/black"
                 android:gravity="center"
-                android:text="2"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_chicken1" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_pizza"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="180dp"
                 android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_pizza1" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_festfood"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="255dp"
                 android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="4"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_bugger2" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_mart"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="330dp"
                 android:layout_marginTop="10dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="5"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_mart1" />
 
             <!--하단 아이콘-->
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_bread"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="85dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_bread2"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_icecream"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="105dp"
                 android:layout_marginTop="85dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="2"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_icecream2" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_snack"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="180dp"
                 android:layout_marginTop="85dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_sponfork2"/>
 
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_movie"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="255dp"
                 android:layout_marginTop="85dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="4"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_movie1" />
 
-            <TextView
+            <ImageView
                 android:id="@+id/home_ic_giftcard"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="330dp"
                 android:layout_marginTop="85dp"
-                android:background="@color/black"
-                android:gravity="center"
-                android:text="5"
-                android:textColor="@color/white" />
+                android:background="@drawable/border_icon_solid"
+                android:src="@drawable/img_icon_giftcard2"/>
 
             <!--상단 아이콘 목록 이름-->
             <TextView
