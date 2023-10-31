@@ -18,7 +18,7 @@
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
-    <!--닉네임 -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,6 +40,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+            <!--이메일 -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:id="@+id/user_nickname"
@@ -54,7 +55,7 @@
                 >
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/user_nickname_editText"
+                    android:id="@+id/email_editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="14dp"
@@ -63,8 +64,10 @@
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+            <!--중복확인-->
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/nickname_double_check"
+                android:id="@+id/email_double_check"
                 android:layout_width="79dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="4dp"
@@ -74,9 +77,9 @@
                 android:background="@drawable/border_icon_solid"
                 android:textColor="@color/blackshadow"/>
         </RelativeLayout>
-        <!--이메일 -->
+        <!--인증번호 -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/ID_textField"
+            android:id="@+id/certification_num_Layout"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="55dp"
@@ -90,18 +93,19 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/ID_textField_editText"
+                android:id="@+id/certification_num"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:textSize="14dp" />
+                android:textSize="14dp"
+                android:singleLine="true"
+                android:maxLines="1"/>
 
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
-
+    <!--다음 페이지 버튼 -->
     <Button
-        android:id="@+id/signup_button"
+        android:id="@+id/nextView_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"

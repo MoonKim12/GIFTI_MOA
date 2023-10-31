@@ -3,6 +3,7 @@ package com.example.giftimoa
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -43,6 +44,13 @@ class SignUp_activity : AppCompatActivity() {
         nameEditText = findViewById(R.id.username_editText)
         phoneNumberEditText = findViewById(R.id.user_phone_number_editText)
         nicknameEditText = findViewById(R.id.user_nickname_editText)
+
+        //이메일 값 전달받기
+        val receivedEmail = intent.getStringExtra("emailtext")
+        if (receivedEmail != null) {
+            emailEditText.setText(receivedEmail)
+        }
+        setUseableEditText(emailEditText,false)
 
         signUpButton.setOnClickListener {
             if (validateForm()) {
@@ -94,6 +102,13 @@ class SignUp_activity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun setUseableEditText(et: EditText, useable: Boolean) {
+        et.isClickable = useable
+        et.isEnabled = useable
+        et.isFocusable = useable
+        et.isFocusableInTouchMode = useable
     }
 
     private fun validateForm(): Boolean {
