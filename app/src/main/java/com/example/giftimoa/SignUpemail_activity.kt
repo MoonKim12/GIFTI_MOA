@@ -39,7 +39,7 @@ class SignUpemail_activity : AppCompatActivity() {
             val certificationNum = binding.certificationNum.text.toString() // certificationNum을 문자열로 변환
 
             if (emailtext.isEmpty() || certificationNum.isEmpty()) { // certificationNum을 비교 대상으로 사용
-                Toast.makeText(this, "인증번호를 입력하지 않았습니다.....", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "인증번호를 입력하지 않았습니다......", Toast.LENGTH_LONG).show()
             } else {
                 val intent = Intent(this, SignUp_activity::class.java)
                 intent.putExtra("emailtext", emailtext)
