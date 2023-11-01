@@ -45,13 +45,14 @@ class SignUp_activity : AppCompatActivity() {
         phoneNumberEditText = findViewById(R.id.user_phone_number_editText)
         nicknameEditText = findViewById(R.id.user_nickname_editText)
 
-        //이메일 값 전달받기
+        //이메일 값 전달받은 후 edittext 비활성화
         val receivedEmail = intent.getStringExtra("emailtext")
         if (receivedEmail != null) {
             emailEditText.setText(receivedEmail)
         }
         setUseableEditText(emailEditText,false)
 
+        //회원가입 클릭시 이벤트
         signUpButton.setOnClickListener {
             if (validateForm()) {
                 val email = emailEditText.text.toString()
