@@ -55,6 +55,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
+                    <!--상품명-->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -68,11 +69,11 @@
                         android:layout_height="42dp"
                         android:layout_margin="6dp"
                         android:background="@drawable/border"
-                        android:inputType="textMultiLine|textNoSuggestions"
                         android:paddingLeft="6dp"
                         android:textColor="@color/black"
                         tools:ignore="TouchTargetSizeCheck" />
 
+                    <!--유효기간-->
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -80,13 +81,13 @@
                         android:layout_marginLeft="6dp"
                         android:textColor="@color/black"
                         android:textSize="13dp"/>
+
                     <EditText
-                        android:id="@+id/text_barcode"
+                        android:id="@+id/text_Effective_date"
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
                         android:layout_margin="6dp"
                         android:background="@drawable/border"
-                        android:inputType="textMultiLine|textNoSuggestions"
                         android:paddingLeft="6dp"
                         android:textColor="@color/black"
                         tools:ignore="TouchTargetSizeCheck" />
@@ -100,7 +101,7 @@
                         android:textSize="13dp"/>
 
                     <EditText
-                        android:id="@+id/text_place"
+                        android:id="@+id/text_barcode"
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
                         android:layout_margin="6dp"
@@ -119,7 +120,7 @@
                         android:textSize="13dp"/>
 
                     <EditText
-                        android:id="@+id/text_expiration"
+                        android:id="@+id/text_place"
                         android:layout_width="match_parent"
                         android:layout_height="42dp"
                         android:layout_margin="6dp"
@@ -130,6 +131,7 @@
                         tools:ignore="TouchTargetSizeCheck" />
 
                     <Button
+                        android:id="@+id/AddGift_Btn"
                         android:foreground="?attr/selectableItemBackground"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
